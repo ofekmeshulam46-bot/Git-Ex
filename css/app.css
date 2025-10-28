@@ -2,19 +2,26 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: black;
+
+
 }
 
-h1{
-color: white;
-text-align: center;
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
 }
 
-div{
+div {
+    display: grid;
+    align-content: center;
+    justify-content: center;
     border-radius: 50%;
     width: 100px;
     height: 100px;
     background-color: turquoise;
     margin: auto;
+    font-size: 2rem;
 }
