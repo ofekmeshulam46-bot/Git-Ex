@@ -1,10 +1,11 @@
 'use strict'
 
 const elBallContent = document.querySelector('.ball')
-
 let gBallSize = 100
+
 function onBallClick(ball) {
-  const increment = 50
+  
+  const increment = getRandomIntExclusive(20, 61)
   gBallSize = gBallSize + increment
   ball.style.width = gBallSize + 'px'
   ball.style.height = gBallSize + 'px'
