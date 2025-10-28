@@ -1,5 +1,5 @@
 'use strict'
 
 function onBallClick(ball){
-    console.log('clicked ball')
+ ball.style.width += 50
 }
