@@ -10,3 +10,11 @@ h1{
 color: white;
 text-align: center;
 }
+
+div{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: turquoise;
+    margin: auto;
+}
