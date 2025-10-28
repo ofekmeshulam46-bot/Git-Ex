@@ -2,7 +2,7 @@
 
 var gBallSize = 100
 
-function onBallClick(ball) {
+function onBallClick(ball,maxDiameter) {
 
   const increment = getRandomIntExclusive(20, 61)
   gBallSize = gBallSize + increment
@@ -10,7 +10,7 @@ function onBallClick(ball) {
   ball.style.height = gBallSize + 'px'
   ball.innerHTML = gBallSize
 
-  if (gBallSize > 400) {
+  if (gBallSize > maxDiameter) {
     ball.style.width = 100 + 'px'
     ball.style.height = 100 + 'px'
     gBallSize = 100
