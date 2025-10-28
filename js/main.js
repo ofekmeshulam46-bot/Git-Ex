@@ -2,16 +2,19 @@
 
 const elBallContent = document.querySelector('.ball')
 
+let gBallSize = 100
 function onBallClick(ball) {
-  const currBallWidth = ball.offsetWidth
-  const currBallHeight = ball.offsetHeight
   const increment = 50
-  const newBallWidth = currBallWidth + increment
-  const newBallHeight = currBallHeight + increment
+  gBallSize = gBallSize + increment
+  ball.style.width = gBallSize + 'px'
+  ball.style.height = gBallSize + 'px'
+  elBallContent.innerHTML = gBallSize
 
-  ball.style.width = newBallWidth + 'px'
-  ball.style.height = newBallHeight + 'px'
-
-  elBallContent.innerHTML=newBallHeight
-
+  if (gBallSize > 400) {
+    ball.style.width = 100 + 'px'
+    ball.style.height = 100 + 'px'
+    gBallSize = 100
+    elBallContent.innerHTML = gBallSize
+    return
+  }
 }
