@@ -14,7 +14,7 @@ h1 {
     font-size: 3rem;
 }
 
-div {
+.ball {
     display: grid;
     align-content: center;
     justify-content: center;
@@ -23,6 +23,20 @@ div {
     width: 100px;
     height: 100px;
     background-color: turquoise;
+    margin: auto;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.round-object{
+     display: grid;
+    align-content: center;
+    justify-content: center;
+    transition:  1s all ;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: purple;
     margin: auto;
     font-size: 22px;
     font-weight: bold;
