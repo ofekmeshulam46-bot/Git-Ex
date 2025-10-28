@@ -23,5 +23,6 @@ div {
     height: 100px;
     background-color: turquoise;
     margin: auto;
-    font-size: 2rem;
+    font-size: 22px;
+    font-weight: bold;
 }
